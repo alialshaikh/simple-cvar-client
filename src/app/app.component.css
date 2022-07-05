@@ -101,3 +101,9 @@
     max-width: 500px;
     margin-top: 10px;;
   }
+
+  .gatewaySpan{
+    margin-left: 5px;
+    font-style: italic;
+    font-size: smaller;
+  }

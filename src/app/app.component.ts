@@ -48,7 +48,7 @@ submit(myfilecontrol:HTMLInputElement,cutoffInput:HTMLInputElement){
       formData.append('cutoff',this.selectedConf.toString());
       this.http.post(url,formData).subscribe({
         next:(v:any)=>{
-          this.resultVal=v.toLocaleString("en-US");;
+          this.resultVal=Math.round(v).toLocaleString("en-US");;
           this.isDone=true;
           this.isProg=false;
           //console.log(v);
